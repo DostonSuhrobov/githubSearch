@@ -1,12 +1,11 @@
-<form class="row g-3" [formGroup]="searchform">
+<form class="row g-3" [formGroup]="searchform" (ngSubmit)="sendUser()">
 
     <div class="col-auto">
       <label for="inputPassword2" class="visually-hidden">Username</label>
-      <input type="text" class="form-control" id="inputPassword2" placeholder="Username">
+      <input type="text" class="form-control" id="" formControlName="username">
     </div>
     <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+      <button type="submit" class="btn btn-primary mb-3" [disabled]="!this.searchform.valid">Search user</button>
     </div>
   </form>
 
-  

@@ -21,4 +21,8 @@ export class SearchPageComponent implements OnInit {
     })
   }
 
+  sendUser(){
+    console.log(this.searchform.value);
+  }
+
 }
