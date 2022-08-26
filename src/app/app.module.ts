@@ -7,7 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+
 import { SearchPageComponent } from './search-page/search-page.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { HomeComponent } from './home/home.component'
@@ -16,7 +16,7 @@ import { HomeComponent } from './home/home.component'
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
+
     SearchPageComponent,
     UserDetailsComponent,
     HomeComponent
